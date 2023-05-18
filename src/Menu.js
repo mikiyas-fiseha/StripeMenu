@@ -1,4 +1,3 @@
-import Hero from './Hero';
 import { AppProvider } from './context';
 import './navbar.css';
 import React, { useState, useRef, useEffect } from 'react'
@@ -7,7 +6,7 @@ import { FaTimes } from 'react-icons/fa'
 import { useGlobalContext } from './context'
 import sublinks from './data'
 
-import logo from './images/logo.svg';
+// import logo from './images/logo.svg';
 import { FaBars } from 'react-icons/fa';
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext()
@@ -65,7 +64,7 @@ const Navbar = () => {
     <nav className='nav' onMouseOver={handleSubmenu}>
       <div className='nav-center'>
         <div className='nav-header'>
-          <img src={logo} className='nav-logo' alt='' />
+          <img src={"Strip"} className='nav-logo' alt='' />
           <button className='btn toggle-btn' onClick={openSidebar}>
             <FaBars />
           </button>
